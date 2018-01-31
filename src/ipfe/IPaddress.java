@@ -13,7 +13,7 @@ public class IPaddress {
     
     
     public IPaddress(String indirizzo) throws IpFormatError{
-        String[] a = indirizzo.split(Pattern.quote(".")); //We use pattern.quote perchè "." means "any character" in regex
+        String[] a = indirizzo.split(Pattern.quote(".")); //We use pattern.quote because "." means "any character" in regex
         try {
             this.b1 = Integer.parseInt(a[0]);
             this.b2 = Integer.parseInt(a[1]);
